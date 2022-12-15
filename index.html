@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sound Board</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(189, 228, 14);
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+      }
+      .btn {
+        background-color: violet;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        margin: 1rem;
+        padding: 2rem 3rem;
+        font-size: 1.5em;
+        font-family: inherit;
+      }
+      .btn:hover {
+        opacity: 0.7;
+      }
+      .btn:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="alarm" src="./sound/alarm.wav"></audio>
+    <audio id="Heart" src="./sound/Heartbeet.wav"></audio>
+    <audio id="dog" src="./sound/dog-barking.wav"></audio>
+    <audio id="laugh" src="./sound/crowd-laugh.wav"></audio>
+    <audio id="lion" src="./sound/lion-roar.wav"></audio>
+    <div id="buttons"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
